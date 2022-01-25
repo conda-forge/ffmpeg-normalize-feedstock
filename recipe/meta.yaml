@@ -1,5 +1,5 @@
 {% set name = "ffmpeg-normalize" %}
-{% set version = "1.22.4" %}
+{% set version = "1.22.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/slhck/ffmpeg-normalize/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 3c2fa6c37d91430d2cf2b52d45f450c8795a479cbad43961deece66f0542c136
+  sha256: 97321826aa7b033ebde90a6b5ba1d789b792ff5bc30ad796c1687f3daa34c187
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - ffmpeg-normalize = ffmpeg_normalize.__main__:main
 
@@ -40,7 +40,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Audio Normalization for Python/ffmpeg'
+  summary: Audio Normalization for Python/ffmpeg
   description: |
     A utility for batch-normalizing audio using ffmpeg.
     This program normalizes media files to a certain loudness level using the
