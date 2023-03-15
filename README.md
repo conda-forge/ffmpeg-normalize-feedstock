@@ -1,11 +1,11 @@
-About ffmpeg-normalize
-======================
+About ffmpeg-normalize-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ffmpeg-normalize-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/slhck/ffmpeg-normalize
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ffmpeg-normalize-feedstock/blob/main/LICENSE.txt)
 
 Summary: Audio Normalization for Python/ffmpeg
 
