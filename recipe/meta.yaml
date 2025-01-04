@@ -11,18 +11,18 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - ffmpeg-normalize = ffmpeg_normalize.__main__:main
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - tqdm >=4.64.1
     - colorama >=0.4.3
     - ffmpeg-progress-yield >=0.5.0
@@ -33,6 +33,7 @@ test:
     - ffmpeg_normalize
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
     - ffmpeg-normalize -h
