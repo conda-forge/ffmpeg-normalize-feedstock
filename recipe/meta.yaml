@@ -27,6 +27,7 @@ requirements:
     - colorama >=0.4.3
     - ffmpeg-progress-yield >=0.5.0
     - colorlog >=6.7.0
+    - mutagen >= 1.47.0
 
 test:
   imports:
