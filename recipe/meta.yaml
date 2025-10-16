@@ -43,7 +43,7 @@ about:
   home: https://github.com/slhck/ffmpeg-normalize
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.md
   summary: Audio Normalization for Python/ffmpeg
   description: |
     A utility for batch-normalizing audio using ffmpeg.
