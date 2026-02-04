@@ -1,5 +1,5 @@
 {% set name = "ffmpeg-normalize" %}
-{% set version = "1.37.1" %}
+{% set version = "1.37.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/slhck/ffmpeg-normalize/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 042ac2001a06c4010ca684da1d6bd2b3d8b8d1237d73b9e1c9e7e14286e57a84
+  sha256: 26b9c8656094b8dbf00ac6ea8ba8693e477f9e9c6cab7d1556022ed2d122cf41
 
 build:
   noarch: python
